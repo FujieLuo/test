@@ -1,0 +1,8 @@
+sudo nvidia-docker ps -a
+sudo nvidia-docker exec -it 90bf36b498cd /bin/bash
+
+
+如果每次关机则需要重新进来：
+sudo nvidia-docker ps -a
+sudo nvidia-docker start 90bf36b498cd
+sudo nvidia-docker  exec -it 90bf36b498cd /bin/bash
